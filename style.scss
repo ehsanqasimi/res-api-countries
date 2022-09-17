@@ -1,0 +1,365 @@
+@import './variables';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: $VeryLightGray;
+    overflow-x: hidden;
+    font-family: Nunito Sans;
+    transition: background-color 0.5s;
+    .container {
+        .detail{
+            display: flex;
+            flex-direction: column;
+            padding-inline: 20px;
+            align-items: center;
+            gap: 50px;
+            padding-block:50px;
+            .backContainer{
+                display: flex;
+                justify-content: flex-start;
+                width: 100%;
+                cursor: pointer;
+                .back{
+                    border-radius: 3px;
+                    padding: 10px 20px;
+                    background-color: white;
+                    box-shadow: 0 0 10px 1px $DarkGray;
+                    display: flex;
+                }
+
+            }
+            .bottomDetail{
+
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                .flag{
+                    width: 100%;
+                }
+                .information{
+                    line-height: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    .left, .right{
+                        span{
+                            font-weight: bold;
+                        }
+                    }
+                    .country-name{
+                        font-weight: 700;
+                        font-size: 1.5rem;
+                    }
+                    .border-countries{
+                        h1{
+                            font-size: 1.5rem;
+                            font-weight: 600;
+                        }
+                        .countries{
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                    }
+                }
+            }
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: $White;
+            padding: 20px 10px;
+            box-shadow: 0 0 10px 1px $DarkGray;
+
+            .darkMode {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                user-select: none;
+            }
+        }
+
+        .inputContainer {
+
+            .search {
+                display: flex;
+                align-items: center;
+                margin: 30px 20px;
+                padding: 10px 20px;
+                background-color: $White;
+                box-shadow: 0 0 10px 1px $DarkGray;
+                border-radius: 5px;
+
+                span {
+                    color: $DarkGray;
+                }
+
+                .searchInput {
+                    border: none;
+                    color: $DarkGray;
+                    background-color: $White;
+                    padding-left: 20px;
+                    outline: none;
+                    width: 100%;
+                }
+            }
+
+            .filter {
+                width: 50%;
+                padding: 10px 30px;
+                background-color: $White;
+                margin-inline: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px 1px $DarkGray;
+
+                #region {
+                    background-color: $White;
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                }
+            }
+        }
+
+        .cards {
+            display: grid;
+            gap: 20px;
+            padding: 50px;
+            grid-template-columns: repeat(auto-fill, 300px);
+            justify-content: center;
+
+            .card {
+                border-radius: 5px;
+                box-shadow: 0 0 10px 1px $DarkGray;
+                color: black;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                    border-top-right-radius: 5px;
+                    border-top-left-radius: 5px;
+                }
+
+                .data {
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    p {
+                        span {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+//dark mode styles
+.bodyDarkMode {
+    background-color: $VeryDarkBlue;
+    overflow-x: hidden;
+    font-family: Nunito Sans;
+    transition: background-color 0.5s;
+    color: white;
+    .container {
+        .detail{
+            display: flex;
+            flex-direction: column;
+            padding-inline: 20px;
+            align-items: center;
+            gap: 50px;
+            padding-block:50px;
+            .backContainer{
+                display: flex;
+                justify-content: flex-start;
+                width: 100%;
+                cursor: pointer;
+                .back{
+                    border-radius: 3px;
+                    padding: 10px 20px;
+                    background-color: $DarkBlue;
+                    box-shadow: 0 0 10px 1px $DarkGray;
+                    display: flex;
+                }
+
+            }
+            .bottomDetail{
+
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                .flag{
+                    width: 100%;
+                }
+                .information{
+                    line-height: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    .left, .right{
+                        span{
+                            font-weight: bold;
+                        }
+                    }
+                    .country-name{
+                        font-weight: 700;
+                        font-size: 1.5rem;
+                    }
+                    .border-countries{
+                        h1{
+                            font-size: 1.5rem;
+                            font-weight: 600;
+                        }
+                        .countries{
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                    }
+                }
+            }
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: $DarkBlue;
+            padding: 20px 10px;
+            box-shadow: 0 0 10px 1px $Black;
+
+            .darkMode {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                user-select: none;
+            }
+        }
+
+        .inputContainer {
+
+            .search {
+                display: flex;
+                align-items: center;
+                margin: 30px 20px;
+                padding: 10px 20px;
+                background-color: $DarkBlue;
+                box-shadow: 0 0 10px 1px $Black;
+                border-radius: 5px;
+
+                span {
+                    color: $White;
+                }
+
+                .searchInput {
+                    border: none;
+                    color: $White;
+                    background-color: $DarkBlue;
+                    padding-left: 20px;
+                    outline: none;
+                    width: 100%;
+                }
+            }
+
+            .filter {
+                width: 50%;
+                padding: 10px 30px;
+                background-color: $DarkBlue;
+                margin-inline: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px 1px $Black;
+
+                #region {
+                    background-color: $DarkBlue;
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    color: white;
+                }
+            }
+        }
+
+        .cards {
+            display: grid;
+            gap: 20px;
+            padding: 50px;
+            grid-template-columns: repeat(auto-fill, 300px);
+            justify-content: center;
+
+            .card {
+                border-radius: 5px;
+                box-shadow: 0 0 10px 1px $Black;
+                color: white;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                    border-top-right-radius: 5px;
+                    border-top-left-radius: 5px;
+                }
+
+                .data {
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    p {
+                        span {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (min-width:800px) {
+    .inputContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container{
+        .detail{
+            .bottomDetail{
+                appearance: none;
+                position: relative;
+                width: 80%;
+                display: flex;
+                flex-direction: row;
+                .flag{
+                    position: absolute;
+                    width: 50%;
+                    height: 50%;
+                    left: 0;
+                }
+                .information{
+                    position: absolute;
+                    width: 50%;
+                    height: 50%;
+                    right: 0;
+                }
+            }
+        }
+    }
+}

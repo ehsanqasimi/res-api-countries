@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 98%);
+  overflow-x: hidden;
+  font-family: Nunito Sans;
+  transition: background-color 0.5s;
+}
+body .container .detail {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 20px;
+  align-items: center;
+  gap: 50px;
+  padding-block: 50px;
+}
+body .container .detail .backContainer {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  cursor: pointer;
+}
+body .container .detail .backContainer .back {
+  border-radius: 3px;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0 0 10px 1px hsl(0deg, 0%, 52%);
+  display: flex;
+}
+body .container .detail .bottomDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+body .container .detail .bottomDetail .flag {
+  width: 100%;
+}
+body .container .detail .bottomDetail .information {
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body .container .detail .bottomDetail .information .left span, body .container .detail .bottomDetail .information .right span {
+  font-weight: bold;
+}
+body .container .detail .bottomDetail .information .country-name {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+body .container .detail .bottomDetail .information .border-countries h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+body .container .detail .bottomDetail .information .border-countries .countries {
+  display: flex;
+  justify-content: space-between;
+}
+body .container nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 20px 10px;
+  box-shadow: 0 0 10px 1px hsl(0deg, 0%, 52%);
+}
+body .container nav .darkMode {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+body .container .inputContainer .search {
+  display: flex;
+  align-items: center;
+  margin: 30px 20px;
+  padding: 10px 20px;
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 0 0 10px 1px hsl(0deg, 0%, 52%);
+  border-radius: 5px;
+}
+body .container .inputContainer .search span {
+  color: hsl(0deg, 0%, 52%);
+}
+body .container .inputContainer .search .searchInput {
+  border: none;
+  color: hsl(0deg, 0%, 52%);
+  background-color: hsl(0deg, 0%, 100%);
+  padding-left: 20px;
+  outline: none;
+  width: 100%;
+}
+body .container .inputContainer .filter {
+  width: 50%;
+  padding: 10px 30px;
+  background-color: hsl(0deg, 0%, 100%);
+  margin-inline: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px hsl(0deg, 0%, 52%);
+}
+body .container .inputContainer .filter #region {
+  background-color: hsl(0deg, 0%, 100%);
+  border: none;
+  outline: none;
+  width: 100%;
+}
+body .container .cards {
+  display: grid;
+  gap: 20px;
+  padding: 50px;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+}
+body .container .cards .card {
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px hsl(0deg, 0%, 52%);
+  color: black;
+  cursor: pointer;
+}
+body .container .cards .card img {
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+body .container .cards .card .data {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .container .cards .card .data p span {
+  font-weight: 700;
+}
+
+.bodyDarkMode {
+  background-color: hsl(207deg, 26%, 17%);
+  overflow-x: hidden;
+  font-family: Nunito Sans;
+  transition: background-color 0.5s;
+  color: white;
+}
+.bodyDarkMode .container .detail {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 20px;
+  align-items: center;
+  gap: 50px;
+  padding-block: 50px;
+}
+.bodyDarkMode .container .detail .backContainer {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  cursor: pointer;
+}
+.bodyDarkMode .container .detail .backContainer .back {
+  border-radius: 3px;
+  padding: 10px 20px;
+  background-color: hsl(209deg, 23%, 22%);
+  box-shadow: 0 0 10px 1px hsl(0deg, 0%, 52%);
+  display: flex;
+}
+.bodyDarkMode .container .detail .bottomDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.bodyDarkMode .container .detail .bottomDetail .flag {
+  width: 100%;
+}
+.bodyDarkMode .container .detail .bottomDetail .information {
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bodyDarkMode .container .detail .bottomDetail .information .left span, .bodyDarkMode .container .detail .bottomDetail .information .right span {
+  font-weight: bold;
+}
+.bodyDarkMode .container .detail .bottomDetail .information .country-name {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.bodyDarkMode .container .detail .bottomDetail .information .border-countries h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.bodyDarkMode .container .detail .bottomDetail .information .border-countries .countries {
+  display: flex;
+  justify-content: space-between;
+}
+.bodyDarkMode .container nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: hsl(209deg, 23%, 22%);
+  padding: 20px 10px;
+  box-shadow: 0 0 10px 1px hsl(200deg, 15%, 8%);
+}
+.bodyDarkMode .container nav .darkMode {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.bodyDarkMode .container .inputContainer .search {
+  display: flex;
+  align-items: center;
+  margin: 30px 20px;
+  padding: 10px 20px;
+  background-color: hsl(209deg, 23%, 22%);
+  box-shadow: 0 0 10px 1px hsl(200deg, 15%, 8%);
+  border-radius: 5px;
+}
+.bodyDarkMode .container .inputContainer .search span {
+  color: hsl(0deg, 0%, 100%);
+}
+.bodyDarkMode .container .inputContainer .search .searchInput {
+  border: none;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(209deg, 23%, 22%);
+  padding-left: 20px;
+  outline: none;
+  width: 100%;
+}
+.bodyDarkMode .container .inputContainer .filter {
+  width: 50%;
+  padding: 10px 30px;
+  background-color: hsl(209deg, 23%, 22%);
+  margin-inline: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px hsl(200deg, 15%, 8%);
+}
+.bodyDarkMode .container .inputContainer .filter #region {
+  background-color: hsl(209deg, 23%, 22%);
+  border: none;
+  outline: none;
+  width: 100%;
+  color: white;
+}
+.bodyDarkMode .container .cards {
+  display: grid;
+  gap: 20px;
+  padding: 50px;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+}
+.bodyDarkMode .container .cards .card {
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px hsl(200deg, 15%, 8%);
+  color: white;
+  cursor: pointer;
+}
+.bodyDarkMode .container .cards .card img {
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.bodyDarkMode .container .cards .card .data {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bodyDarkMode .container .cards .card .data p span {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 800px) {
+  .inputContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container .detail .bottomDetail {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+  }
+  .container .detail .bottomDetail .flag {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 0;
+  }
+  .container .detail .bottomDetail .information {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    right: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
